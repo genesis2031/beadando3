@@ -59,4 +59,5 @@
  
 
 ##Tesztelés
-
+    -REST API: Advanced REST Client segítségéval
+    -ember-CLI: built-in Testem

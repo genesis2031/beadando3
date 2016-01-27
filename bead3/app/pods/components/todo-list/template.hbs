@@ -1,0 +1,27 @@
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Felhasználó</th>
+            <th>Feladat neve</th>
+            <th>Prioritás</th>
+            <th>Leírás</th>
+            <th>Funkciók</th>
+        </tr>   
+    </thead>
+    <tbody>
+
+        {{#each todos}}
+        <tr>
+            <td>{{user.name}}</td>
+            <td>{{nameOfTodo}}</td>
+            <td>{{priority}}</td>
+            <td><span class="badge">{{numberOfMessages}}</span> {{description}}</td>
+            <td>
+                {{link-to "Megtekint" "todos.view" this class="btn btn-default btn-sm"}}
+                {{link-to "Szerkeszt" "todos.edit" this class="btn btn-default btn-sm"}}
+                <button {{action "deleteTodo" this}} class="btn btn-default btn-sm">Töröl</button>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

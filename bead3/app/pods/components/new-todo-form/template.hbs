@@ -1,0 +1,42 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if todos.user "has-error"}}">
+        {{!--<div class="form-group" >--}}
+            <label for="usernev" class="col-lg-2 control-label">Név</label>
+            <div class="col-lg-10">
+                <select class="form-control" id="usernev" name="usernev">
+                    {{#each users}}
+                    <option value="{{name}}">{{name}}</option>
+                    {{/each}}
+                </select>
+                <span class="help-block">{{todos.user}}</span>                
+            </div>
+        </div>
+        <div class="form-group {{if todos.nameOfTodo "has-error"}}">
+            <label for="feladatnev" class="col-lg-2 control-label">Feladat neve</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="feladatnev" name="feladatnev" placeholder="pl. mosás" type="text" value="{{data.nameOfTodo}}">
+                <span class="help-block">{{todos.nameOfTodo}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if todos.priority "has-error"}}">
+            <label for="prio" class="col-lg-2 control-label">Prioritás</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="prio" name="prio" placeholder="pl. 8" type="text" value="{{data.priority}}">
+                <span class="help-block">{{todos.priority}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if todos.description "has-error"}}">
+            <label for="leiras" class="col-lg-2 control-label">Leírás</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="leiras" name="leiras">{{data.description}}</textarea>
+                <span class="help-block">{{todos.description}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button {{action "submit"}} class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>        

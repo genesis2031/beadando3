@@ -1,0 +1,15 @@
+{{#each messages}}
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+<div class="page-header">
+    <h1>Elvégzendő feladatok</h1>
+</div>
+
+{{todo-list todos=model}}
+
+
+<p>{{link-to "Új feladat" "todos.new" class="btn btn-default"}}</p>

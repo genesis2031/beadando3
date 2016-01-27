@@ -1,0 +1,23 @@
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Felhasználó neve</th>
+            <th>Neptunkód</th>
+            <th>Funkciók</th>
+        </tr>   
+    </thead>
+    <tbody>
+
+        {{#each users}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{neptun}}</td>
+            <td>
+                {{link-to "Megtekint" "users.view" this class="btn btn-default btn-sm"}}
+                <button {{action "deleteUser" this}} class="btn btn-default btn-sm">Töröl</button>
+            </td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>

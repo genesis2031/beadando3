@@ -1,0 +1,24 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if users.name "has-error"}}">
+            <label for="n" class="col-lg-2 control-label">Felhasználó neve</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="usernev" name="usernev" placeholder="pl. Kovács Józsi" type="text" value="{{data.name}}">
+                <span class="help-block">{{users.nev}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if users.neptun "has-error"}}">
+            <label for="n" class="col-lg-2 control-label">Neptun</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="neptun" name="neptun" placeholder="pl. asd123" type="text" value="{{data.neptun}}">
+                <span class="help-block">{{users.neptun}}</span>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button {{action "submit"}} class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>   

@@ -35,7 +35,7 @@
 
     - Adatbázisterv
     
-        ![Adatbázisterv](workspace/pictures/2.png)
+        ![Adatbázisterv](http://i.imgur.com/2IGRDVp.png)
         
         
 ##Implementáció

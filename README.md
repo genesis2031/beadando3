@@ -32,7 +32,8 @@
       - meglévő felhasználó törlése
 
 2. Adatbázisterv
-    ![Adatbázisterv] (http://i.imgur.com/21GRDVp.png)
+
+    ![Adatbázisterv] (http://i.imgur.com/2IGRDVp.png)
 
 3. Szekvenciadiagram
     ![Szekvenciadiagram] (http://i.imgur.com/w0DfUJa.png)

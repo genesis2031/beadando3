@@ -46,7 +46,7 @@
     - Cloud9 webes IDE
     
 2. Könyvtárstruktúra:
-    - app: app.js alkalmazás, router.js-ben található hogy az oldalak milyen címen legyenek elérhetőek
+    - app: app.js alkalmazás
     - pods: ember.js podok
       - components: üzleti logika
       - index: kezdőlap 

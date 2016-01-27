@@ -30,6 +30,9 @@
       - felhasználók listjája
       - új felhasználó felvitele
       - meglévő felhasználó törlése
+2. Adatbázisterv
+    
+        ![Adatbázisterv] (http://i.imgur.com/2IGRDVp.png)
 
 2. Adatbázisterv
     

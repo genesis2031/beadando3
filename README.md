@@ -46,13 +46,16 @@
     - Cloud9 webes IDE
     
 2. Könyvtárstruktúra:
-    - config: a waterline konfigurációja
-    - controllers: vezérlők, folyamatok irányítása
-    - models: adatok, modell definiálása
-    - node_modules: node js-hez telepített modulok
-    - public
-    - viewmodels: nézetmodel
-    - views: az egyes oldalak kinézetét adja meg
+    - app: app.js alkalmazás, router.js-ben található hogy az oldalak milyen címen legyenek elérhetőek
+    - pods: ember.js podok
+      - components: üzleti logika
+      - index: kezdőlap 
+      - todo: feladatok modellje
+      - todos: feladatlista
+      - user: felhasználó modellje
+      - users: felhasználólista
+  - bower_components: bower elemei
+  - config: ember.js konfiguráció 
  
 
 ##Tesztelés
